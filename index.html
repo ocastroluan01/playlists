@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Playlists por Década</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .playlist {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #1e1e1e;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+    }
+    .playlist:hover {
+      transform: scale(1.02);
+      background-color: #272727;
+    }
+    .playlist img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .playlist a {
+      color: #1DB954;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 10px;
+      }
+      .playlist img {
+        width: 80px;
+        height: 80px;
+      }
+      .playlist a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="playlist">
+      <img src="assets/anos80.png" alt="Anos 80">
+      <a href="https://open.spotify.com/playlist/1kyno7tpXSmMPWKsTaQ27g" target="_blank">As Melhores: Anos 80</a>
+    </div>
+    <div class="playlist">
+      <img src="assets/anos90.png" alt="Anos 90">
+      <a href="https://open.spotify.com/playlist/1MyeBM0k7JU5rVrvgxFHCr" target="_blank">As Melhores: Anos 90</a>
+    </div>
+    <div class="playlist">
+      <img src="assets/anos2000.png" alt="Anos 2000">
+      <a href="https://open.spotify.com/playlist/2ECchg0xa7RJbDWargrvpQ" target="_blank">As Melhores: Anos 2000</a>
+    </div>
+    <div class="playlist">
+      <img src="assets/anos2010.png" alt="Anos 2010">
+      <a href="https://open.spotify.com/playlist/3Mem1Xof5FPl030rKlJw9y" target="_blank">As Melhores: Anos 2010</a>
+    </div>
+    <div class="playlist">
+      <img src="assets/anos2020.png" alt="Anos 2020">
+      <a href="https://open.spotify.com/playlist/0zRm4xMpESGzEFHjVAYRKW" target="_blank">As Melhores: Anos 2020</a>
+    </div>
+    <div class="playlist">
+      <img src="assets/top500.png" alt="Top 500">
+      <a href="https://open.spotify.com/playlist/36vcZUy9RJ3wrwpbI8MDSq" target="_blank">As 500 Melhores de Todos os Tempos</a>
+    </div>
+  </div>
+</body>
+</html>
