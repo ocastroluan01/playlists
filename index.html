@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>As Melhores de Todos os Tempos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin: 30px 0;
+        }
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 0.2em;
+        }
+        header p {
+            font-size: 1em;
+            color: #b3b3b3;
+        }
+        .playlist-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .playlist {
+            display: flex;
+            align-items: center;
+            background-color: #181818;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: background 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        .playlist:hover {
+            background-color: #282828;
+        }
+        .playlist img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .playlist-info {
+            padding: 10px 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .playlist-info h2 {
+            font-size: 1em;
+            margin: 0 0 5px;
+        }
+        .playlist-info p {
+            margin: 0;
+            font-size: 0.85em;
+            color: #b3b3b3;
+        }
+        @media (min-width: 600px) {
+            .playlist-grid {
+                max-width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎶 As Melhores de Todos os Tempos</h1>
+        <p>Uma jornada musical pelos anos 80, 90, 2000, 2010 e 2020</p>
+    </header>
+    <div class="playlist-grid">
+        <a class="playlist" href="https://open.spotify.com/playlist/7f3z5YeRS2EkhUeuwD4I7a" target="_blank">
+            <img src="assets/anos80.png" alt="Anos 80">
+            <div class="playlist-info">
+                <h2>As 100 Melhores Anos 80</h2>
+                <p>Playlist • Luan Castro</p>
+            </div>
+        </a>
+        <a class="playlist" href="https://open.spotify.com/playlist/5oTyojklq7KmxO5PbHhbtF" target="_blank">
+            <img src="assets/anos90.png" alt="Anos 90">
+            <div class="playlist-info">
+                <h2>As 100 Melhores Anos 90</h2>
+                <p>Playlist • Luan Castro</p>
+            </div>
+        </a>
+        <a class="playlist" href="https://open.spotify.com/playlist/3xCiW07fyKjFb28yp7iFxN" target="_blank">
+            <img src="assets/anos2000.png" alt="Anos 2000">
+            <div class="playlist-info">
+                <h2>As 100 Melhores Anos 2000</h2>
+                <p>Playlist • Luan Castro</p>
+            </div>
+        </a>
+        <a class="playlist" href="https://open.spotify.com/playlist/6JvZ2AkU4I5s6MKsLM1OU4" target="_blank">
+            <img src="assets/anos2010.png" alt="Anos 2010">
+            <div class="playlist-info">
+                <h2>As 100 Melhores Anos 2010</h2>
+                <p>Playlist • Luan Castro</p>
+            </div>
+        </a>
+        <a class="playlist" href="https://open.spotify.com/playlist/00WhbF2rpp32r0DSqtLdD0" target="_blank">
+            <img src="assets/anos2020.png" alt="Anos 2020">
+            <div class="playlist-info">
+                <h2>As 100 Melhores Anos 2020</h2>
+                <p>Playlist • Luan Castro</p>
+            </div>
+        </a>
+        <a class="playlist" href="https://open.spotify.com/playlist/1fIdk56kUMpRSGWrkP6j0U" target="_blank">
+            <img src="assets/top500.png" alt="Top 500">
+            <div class="playlist-info">
+                <h2>As 500 Melhores de Todos os Tempos</h2>
+                <p>Playlist • Luan Castro</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
